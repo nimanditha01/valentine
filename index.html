@@ -18,7 +18,8 @@ font-family: Arial, sans-serif;
 
 .card {
 background: #fff5f9;
-width: 360px;
+width: 500px;
+height: 200px;
 padding: 30px;
 border-radius: 18px;
 text-align: center;
@@ -84,11 +85,13 @@ border-radius: 12px;
 <div class="card" id="card">
 <div class="emoji">🐱💖</div>
 
-<h1>SENURI will you be my valentine?</h1>
+<h1>SENURI, will you be my valentine?</h1>
 
 <div class="buttons">
 <button id="yes">Yes</button>
 <button id="no">No</button>
+
+  <p>You’re not allowed to click “No,” even for fun.You’re my forever Valentine.</p>
 </div>
 
 <div class="result" id="result">
@@ -105,7 +108,7 @@ const buttons = document.querySelector(".buttons");
 
 noBtn.addEventListener("mouseover", () => {
 const x = Math.random() * 220;
-const y = Math.random() * 200;
+const y = Math.random() * 100;
 noBtn.style.left = x + "px";
 noBtn.style.top = y + "px";
 });
@@ -118,3 +121,4 @@ result.style.display = "block";
 
 </body>
 </html>
+
